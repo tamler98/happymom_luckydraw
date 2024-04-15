@@ -541,6 +541,82 @@ li {
 /* Footer */
 
 	}
+	/* điện thoại di động ở chế độ dọc */
+	@media (max-width: 480px) {
+		body {
+			max-width: 480px;
+			background: url(../image/nen-11.png);
+			background-position: 60% 10%;
+		}
+/* Header */
+		header {
+			margin-top: .5em;
+		}
+		.img_logo {
+			width: 37%;
+			height: 80%;
+			position: relative;
+		}
+
+		.header_logo {
+			height: 8vh;
+			padding-left: -1em;
+		}
+
+		.header_img {
+			width: 100%;
+			margin-left: -1em;
+		}
+/* Main */
+		.img_glass {
+			width: 39vw;
+		}
+
+		.wheel {
+			width: 65vw;
+			/* 20% của chiều rộng của màn hình */
+			height: 65vw;
+			/* Chiều cao bằng chiều rộng */
+		}
+
+		.wheel_section_head {
+			top: -.5rem;
+		}
+
+		.img_pattern .img_shark {
+			top: -1rem;
+			left: -5rem;
+			width: 18vw;
+		}
+
+		.img_pattern .img_baloon {
+			top: 0rem;
+			right: -9rem;
+			width: 22vw;
+		}
+
+		.img_pattern .img_ipad {
+			top: 13rem;
+			left: 5rem;
+			width: 18vw;
+			z-index: 10003;
+		}
+		.btn--wheel img {
+			width: 9vw;
+		}
+
+		.img_de {
+			height: 100%;
+			top: .3em;
+			left: -.2em;
+		}
+/* Text */
+		.text>b {
+			font-size: 80%;
+		}
+/* Footer */
+
+	}
 		/* điện thoại di động ở chế độ dọc */
 		@media (max-width: 390px) {
 			body {
@@ -553,7 +629,7 @@ li {
 				margin-top: .5em;
 			}
 			.img_logo {
-				position: absolute;
+				position: relative;
 			}
 	
 			.header_logo {
@@ -582,7 +658,7 @@ li {
 			}
 	
 			.img_pattern .img_shark {
-				top: 0rem;
+				top: -2rem;
 				left: -4rem;
 				width: 18vw;
 			}
@@ -590,11 +666,11 @@ li {
 			.img_pattern .img_baloon {
 				top: 0rem;
 				right: -9rem;
-				width: 22vw;
+				width: 24vw;
 			}
 	
 			.img_pattern .img_ipad {
-				top: 10rem;
+				top: 11rem;
 				left: 4rem;
 				width: 18vw;
 				z-index: 10003;
