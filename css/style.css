@@ -1,0 +1,618 @@
+:root {
+	--size-wheel: 25rem;
+}
+
+html {
+	box-sizing: border-box;
+	height: 100%;
+	overflow: hidden;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background: url(../image/nen-11.png);
+	background-position: 55% 30%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: scroll;
+}
+
+/* Header */
+header {
+	width: 100%;
+	max-height: 37vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.header_logo {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: left;
+	margin-left: 1em;
+	margin-top: 1em;
+}
+
+.img_logo {
+	width: 250px;
+	display: flex;
+	justify-items: flex-start;
+}
+
+.header_img {
+	max-height: 100%;
+	position: relative;
+}
+
+.summer_header {
+	margin-top: -5em;
+	margin-left: 3em;
+}
+
+/** main **/
+main {
+	margin-top: 1em;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	flex-direction: column;
+}
+
+
+.img_pattern {
+	position: absolute;
+	top: -1rem;
+}
+
+.img_pattern .img_shark {
+	position: relative;
+	top: -10rem;
+	left: -5rem;
+	width: 8vw;
+	animation: nut ease-out 0.6s infinite;
+
+}
+
+.img_pattern .img_baloon {
+	position: relative;
+	top: 2rem;
+	right: -17rem;
+	width: 12vw;
+	animation: nut ease-out 0.6s infinite;
+}
+
+.img_pattern .img_ipad {
+	position: relative;
+	top: 15rem;
+	left: -28rem;
+	animation: nut ease-out 0.6s infinite;
+	width: 11vw;
+}
+
+
+
+
+.main_wheel {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.wheel_section_head {
+	height: 4.5vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+
+}
+
+.img_glass {
+	width: 15vw;
+	position: absolute;
+	z-index: 1000;
+	top: -2em;
+}
+
+.wheel_section_main {
+	display: flex;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+	z-index: 999;
+}
+
+.wheel {
+	width: 27vw;
+	/* 20% của chiều rộng của màn hình */
+	height: 27vw;
+	/* Chiều cao bằng chiều rộng */
+}
+
+.wheel_section_footer {
+	display: flex;
+	position: relative;
+	height: 10vh;
+	width: 100vw;
+	justify-content: center;
+	top: -2em;
+	z-index: 998;
+}
+
+.btn--wheel {
+	position: absolute;
+	z-index: 10002;
+	cursor: pointer;
+	border: none;
+	background-color: rgba(245, 222, 179, 0);
+	animation: button ease-out 0.6s infinite;
+}
+
+
+
+
+
+
+.img_de {
+	height: 12vh;
+	position: relative;
+	left: -.7em;
+}
+
+
+
+@keyframes nut {
+	0% {
+		scale: 1;
+	}
+
+	80% {
+		scale: 1.05;
+	}
+
+	100% {
+		scale: 1.1;
+	}
+}
+@keyframes button {
+	0% {
+		scale: 1;
+	}
+
+	80% {
+		scale: 1.1;
+	}
+
+	100% {
+		scale: 1;
+	}
+}
+
+button:hover {
+	scale: 1.1;
+}
+
+
+.msg {
+	min-height: 4rem;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 0.5rem;
+	text-transform: capitalize;
+}
+
+ul {
+	position: relative;
+	padding: 0;
+	margin: 1rem 0;
+	width: var(--size-wheel);
+	height: var(--size-wheel);
+	border: 10px solid rgb(205, 212, 1);
+	border-radius: 50%;
+	list-style: none;
+	overflow: hidden;
+	transition: cubic-bezier(0.075, 0.8, 0.2, 1) 7s;
+}
+
+span {
+	display: inline-block;
+	position: relative;
+	padding: 0.5rem;
+}
+
+span::before {
+	content: '';
+	position: absolute;
+	top: 10rem;
+	left: 50%;
+	border-left: 2rem solid transparent;
+	border-right: 2rem solid transparent;
+}
+
+span::after {
+	content: '';
+	width: 2rem;
+	height: 2rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgb(255, 255, 255);
+	border-radius: 50%;
+	display: none;
+}
+
+li {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 50%;
+	transform-origin: 0% 100%;
+}
+
+.text {
+	font-family: Arial, Helvetica, sans-serif;
+	position: absolute;
+	left: -100%;
+	width: 200%;
+	height: 200%;
+	display: block;
+	text-align: center;
+	padding-top: 1.7rem;
+	font-weight: 600;
+	color: #fff;
+}
+
+.text>b {
+	display: inline-block;
+	word-break: break-word;
+	max-width: 30%;
+	font-size: 120%;
+}
+
+.text-1 {
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 187, 255);
+
+}
+
+.text-2 {
+	background-image: linear-gradient(2deg, #00aeef 80%, rgb(255, 255, 255));
+}
+
+.popup_img {
+	height: 100px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Animation cho ball */
+.ball {
+	position: relative;
+	bottom: 50px;
+	left: calc(100% - 20px);
+	width: 50px;
+	height: 50px;
+	background: yellow;
+	border-radius: 50%;
+	animation: ball-move8234 3s ease-in-out 1s infinite alternate;
+}
+
+.ball::after {
+	position: absolute;
+	content: '';
+	top: 25px;
+	right: 5px;
+	width: 5px;
+	height: 5px;
+	background: #000;
+	border-radius: 50%;
+}
+
+.bar {
+	width: 200px;
+	height: 12.5px;
+	background: #FFDAAF;
+	border-radius: 30px;
+	transform: rotate(-15deg);
+	animation: up-down6123 3s ease-in-out 1s infinite alternate;
+}
+
+@keyframes up-down6123 {
+	from {
+		transform: rotate(-15deg);
+	}
+
+	to {
+		transform: rotate(15deg);
+	}
+}
+
+@keyframes ball-move8234 {
+	from {
+		left: calc(100% - 40px);
+		transform: rotate(360deg);
+	}
+
+	to {
+		left: calc(0% - 20px);
+		transform: rotate(0deg);
+	}
+}
+
+
+/* Thiết bị lớn như máy tính để bàn */
+
+@media (max-width: 992px) {
+	body {
+		max-width: 992px;
+		background: url(../image/nen-11.png);
+		background-position: 60% 2%;
+		background-size: 165vw 100vh;
+	}
+
+
+	.wheel {
+		width: 40vw;
+		/* 20% của chiều rộng của màn hình */
+		height: 40vw;
+		/* Chiều cao bằng chiều rộng */
+	}
+
+	.wheel_section_head {
+		height: 3.5vh;
+	}
+
+	.img_glass {
+		margin-top: .5em;
+		width: 22vw;
+		position: absolute;
+		z-index: 1000;
+	}
+
+	.img_pattern .img_shark {
+		top: -3rem;
+		left: -7rem;
+		width: 11vw;
+
+	}
+
+	.img_pattern .img_baloon {
+		top: 1rem;
+		right: -12rem;
+	}
+
+	.img_pattern .img_ipad {
+		top: 18rem;
+		left: -23rem;
+		width: 13vw;
+	}
+
+	.text>b {
+		font-size: 100%;
+	}
+
+	/* thiết bị màn hình trung bình như máy tính bảng */
+	@media (max-width: 768px) {
+		body {
+			max-width: 768px;
+			background: url(../image/nen-11.png);
+			background-position: 60% 10%;
+			background-size: 190vw 100vh;
+		}
+
+
+		.wheel {
+			width: 50vw;
+			/* 20% của chiều rộng của màn hình */
+			height: 50vw;
+			/* Chiều cao bằng chiều rộng */
+		}
+
+		.wheel_section_head {
+			height: 4vh;
+		}
+
+		header {
+			margin-top: 1em;
+		}
+
+		.header_img {
+			width: 97%;
+		}
+
+		.img_glass {
+			margin-top: .5em;
+			width: 30vw;
+			position: absolute;
+			z-index: 1000;
+		}
+
+		.img_pattern .img_shark {
+			top: -3rem;
+			left: -7rem;
+			width: 15vw;
+
+		}
+
+		.img_pattern .img_baloon {
+			top: 1rem;
+			right: -11rem;
+			width: 14vw;
+		}
+
+		.img_pattern .img_ipad {
+			top: 19rem;
+			left: -23rem;
+			width: 17vw;
+		}
+
+		.text>b {
+			font-size: 100%;
+		}
+
+	}
+
+	/* điện thoại di động ở chế độ dọc */
+	@media (max-width: 576px) {
+		body {
+			max-width: 576px;
+			background: url(../image/nen-11.png);
+			background-position: 60% 10%;
+		}
+/* Header */
+		header {
+			margin-top: .5em;
+		}
+
+		.header_logo {
+			margin-bottom: 1em;
+		}
+
+		.img_logo {
+			width: 35vw;
+		}
+
+		.header_img {
+			width: 95%;
+		}
+/* Main */
+		.img_glass {
+			width: 35vw;
+			position: absolute;
+			z-index: 1000;
+		}
+
+		.wheel {
+			width: 60vw;
+			/* 20% của chiều rộng của màn hình */
+			height: 60vw;
+			/* Chiều cao bằng chiều rộng */
+		}
+
+		.wheel_section_head {
+			height: 1vh;
+			position: relative;
+			top: -1.35rem;
+		}
+
+		.img_pattern .img_shark {
+			top: 0rem;
+			left: -6rem;
+			width: 18vw;
+
+		}
+
+		.img_pattern .img_baloon {
+			top: 0rem;
+			right: -12rem;
+			width: 22vw;
+		}
+
+		.img_pattern .img_ipad {
+			top: 15rem;
+			left: 7rem;
+			width: 18vw;
+		}
+		.btn--wheel img {
+			width: 9vw;
+		}
+/* Text */
+		.text>b {
+			font-size: 90%;
+		}
+/* Footer */
+
+	}
+		/* điện thoại di động ở chế độ dọc */
+		@media (max-width: 390px) {
+			body {
+				max-width: 390px;
+				background: url(../image/nen-11.png);
+				background-position: 60% 10%;
+			}
+	/* Header */
+			header {
+				margin-top: .5em;
+			}
+			.img_logo {
+				position: absolute;
+			}
+	
+			.header_logo {
+				height: 7vh;
+				padding-left: -1em;
+			}
+	
+			.header_img {
+				width: 100%;
+				margin-left: -1em;
+			}
+	/* Main */
+			.img_glass {
+				width: 39vw;
+			}
+	
+			.wheel {
+				width: 65vw;
+				/* 20% của chiều rộng của màn hình */
+				height: 65vw;
+				/* Chiều cao bằng chiều rộng */
+			}
+	
+			.wheel_section_head {
+				top: -.5rem;
+			}
+	
+			.img_pattern .img_shark {
+				top: 0rem;
+				left: -4rem;
+				width: 18vw;
+			}
+	
+			.img_pattern .img_baloon {
+				top: 0rem;
+				right: -9rem;
+				width: 22vw;
+			}
+	
+			.img_pattern .img_ipad {
+				top: 10rem;
+				left: 4rem;
+				width: 18vw;
+				z-index: 10003;
+			}
+			.btn--wheel img {
+				width: 9vw;
+			}
+
+			.img_de {
+				height: 100%;
+				top: .3em;
+				left: -.2em;
+			}
+	/* Text */
+			.text>b {
+				font-size: 70%;
+			}
+	/* Footer */
+	
+		}
+}
