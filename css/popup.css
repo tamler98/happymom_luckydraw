@@ -106,6 +106,19 @@ button.accept {
     }
   }
 }
+@media (max-width: 480px) {
+  .cookiesContent {
+    width: 90vw;
+    max-height: 29vh;
+    font-size: 85%;
+    top: 1em;
+    z-index: 10005;
+  }
+
+  .popup_img {
+    height: 8vh;
+  }
+}
 
 @media (max-width: 390px) {
   .cookiesContent {
