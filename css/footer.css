@@ -305,6 +305,45 @@ footer{
 	}
 
 }
+@media (max-width: 480px) {
+	.footer-distributed {
+		margin-top: -1em;
+	}
+	.footer-distributed .footer-left{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-top: 0px;
+		font-size: 14px;
+	}
+	.footer_mainlogo {
+		width: 50vw;
+	}
+	.footer_mainlogo img{
+		height: 5vh;
+	}
+	.footer-distributed .footer-center {
+		width: 100%;
+	}
+
+	.footer-distributed .footer-center p {
+	font-size: 12px;
+	}
+
+	.footer-distributed .footer-right {
+		width: 100%;
+	}
+
+	.footer-distributed .footer-company-about {
+		font-size: 12px;
+	}
+
+	.footer-distributed .footer-icons {
+		margin-left: .2em;
+	}
+}
 @media (max-width: 390px) {
 	.footer-distributed {
 		margin-top: -1em;
