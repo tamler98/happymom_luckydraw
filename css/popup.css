@@ -134,3 +134,16 @@ button.accept {
     height: 8vh;
   }
 }
+@media (max-width: 375px) {
+  .cookiesContent {
+    width: 90vw;
+    min-height: 30vh;
+    font-size: 75%;
+    top: 1em;
+    z-index: 10005;
+  }
+
+  .popup_img {
+    height: 8vh;
+  }
+}
