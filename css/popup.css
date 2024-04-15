@@ -109,7 +109,7 @@ button.accept {
 @media (max-width: 480px) {
   .cookiesContent {
     width: 90vw;
-    max-height: 29vh;
+    min-height: 29vh;
     font-size: 85%;
     top: 1em;
     z-index: 10005;
@@ -120,10 +120,11 @@ button.accept {
   }
 }
 
+
 @media (max-width: 390px) {
   .cookiesContent {
     width: 90vw;
-    max-height: 29vh;
+    min-height: 29vh;
     font-size: 75%;
     top: 1em;
     z-index: 10005;
