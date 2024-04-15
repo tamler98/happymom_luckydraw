@@ -137,7 +137,7 @@ button.accept {
 @media (max-width: 375px) {
   .cookiesContent {
     width: 90vw;
-    min-height: 30vh;
+    min-height: 33vh;
     font-size: 75%;
     top: 1em;
     z-index: 10005;
