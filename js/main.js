@@ -11,29 +11,29 @@
 
 	//=====< Danh sách phần thưởng >=====
 	const listGift = [
-		{
-			text: 'I Pad',
-			percent: 0 / 100,
+				{
+			text: 'Gấu bông trị giá 150K',
+			percent: 20 / 100,
 		},
 		{
 			text: 'Nhận ngay lì xì 100K',
 			percent: 20 / 100,
 		},
 		{
-			text: '01 Buổi Massage bầu',
-			percent: 20 / 100,
+			text: 'Bỉm bơi cho bé',
+			percent: 15 / 100,
 		},
 		{
-			text: 'Sản phẩm Chicco/Sanosan',
-			percent: 20 / 100,
+			text: 'Một buổi massage cho mẹ',
+			percent: 10 / 100,
 		},
 		{
 			text: 'Phiếu hồ bơi lớn',
-			percent: 20 / 100,
+			percent: 25 / 100,
 		},
 		{
-			text: 'Đồ chơi Baby Shark',
-			percent: 20 / 100,
+			text: '1 buổi massage bầu khoẻ xinh',
+			percent: 10 / 100,
 		},
 	];
 
