@@ -17,7 +17,7 @@
 		},
 		{
 			text: 'Nhận ngay lì xì 100K',
-			percent: 20 / 100,
+			percent: 10 / 100,
 		},
 		{
 			text: 'Bỉm bơi cho bé',
@@ -29,7 +29,7 @@
 		},
 		{
 			text: 'Phiếu hồ bơi lớn',
-			percent: 25 / 100,
+			percent: 35 / 100,
 		},
 		{
 			text: '1 buổi massage bầu khoẻ xinh',
